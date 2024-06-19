@@ -1,0 +1,71 @@
+form{
+    border: 1px dashed rgb(33, 241, 26);
+    padding: 40px;
+    width: 400px;
+    margin: 0 auto; 
+    box-shadow: 0 0 22px 0 rgba(0, 0, 0, 0.4);
+}
+
+input{
+    width: 100%;
+ }
+
+ [ type*='checkbox']
+ {
+    width: auto;
+ }
+
+ input,
+ label{
+    vertical-align: middle;
+ }
+
+ [type*='checkbox'] +label{
+    font-size: 13px;
+    font-style: italic;
+ }
+
+ .info-box{
+    font-size: 13px;
+ }
+
+ p{
+   font-style: italic;
+   color: red;
+   font-size: 13px;
+ }
+
+ .info-box > a
+ {
+    color: rgb(80, 255, 118);
+    text-decoration: none;
+    font-weight: 700;
+ }
+
+ 
+ .info.box a:hover
+ {
+    text-decoration:underline;
+ }
+
+ 
+ button[type*='submit']
+ {
+background-color: rgb(30, 210, 30);
+border: 0;
+padding: 10px 20px;
+margin-top: 10px;
+color: white;
+cursor: pointer;
+transition: 0.3s;
+ }
+
+ button[type*='submit']:hover{
+    background-color: rgb(80, 255, 95);
+    transform: translateY(-3px);
+ }
+
+ .field-group{
+    margin-bottom: 10px;
+ }
+
