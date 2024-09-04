@@ -1,0 +1,46 @@
+CREATE DATABASE projects;
+USE projects;
+
+-- Create the registrations table
+CREATE TABLE registrations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    gender ENUM('Male', 'Female', 'Other') NOT NULL,
+    faculty VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+-- Create the student_registration table
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    fname VARCHAR(255) NOT NULL,
+    mname VARCHAR(255) NOT NULL,
+    address TEXT NOT NULL,
+    phone VARCHAR(15) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    course TEXT NOT NULL,
+    department VARCHAR(50) NOT NULL,
+    gender VARCHAR(10) NOT NULL,
+    blood VARCHAR(10) NOT NULL,
+    dob DATE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Create the tbl_book table
+CREATE TABLE tbl_book (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    publisher VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    edition VARCHAR(50) NOT NULL,
+    no_of_page INT NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    publish_date DATE NOT NULL,
+    isbn VARCHAR(50) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
